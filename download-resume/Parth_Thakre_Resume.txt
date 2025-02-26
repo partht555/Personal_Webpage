@@ -1,0 +1,27 @@
+Parth Thakre
+669-233-6169 | partht555@gmail.com | LinkedIn | GitHub
+
+Education
+Purdue University - West Lafayette | Aug 2022 – Dec 2025
+Bachelor of Science in Computer Science and Data Science | GPA: 3.71
+
+Experience
+Undergraduate Researcher | Purdue University - West Lafayette
+- Processing large IMPROVE datasets in Python from 8 Midwest states
+- Writing scripts with pandas for data extraction and analysis
+- Automating visualization with Matplotlib
+
+Software Development Intern | SiTime
+- Developed PyQt6 software tool for wafer production data analysis
+- Achieved 70-90% reduction in test time
+- Created data processing algorithm using pandas
+
+Software Engineer Intern | SonicWall
+- Implemented JSON/HTML code for network security manager
+- Conducted 250+ API tests using Postman
+- Enhanced customer reporting systems
+
+Technical Skills
+Languages: Java, Python, C/C++, R, HTML/CSS, JavaScript, SQL
+Developer Tools: Linux, Git, GitHub, VS Code, PyCharm, IntelliJ
+Libraries: numPy, Matplotlib, pandas, scikit-learn, TensorFlow
