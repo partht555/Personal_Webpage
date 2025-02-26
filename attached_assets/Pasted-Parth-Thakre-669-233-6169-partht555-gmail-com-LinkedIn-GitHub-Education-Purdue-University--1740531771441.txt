@@ -1,0 +1,50 @@
+Parth Thakre
+669-233-6169 | partht555@gmail.com | LinkedIn | GitHub
+Education
+Purdue University - West Lafayette Aug 2022 – Dec 2025
+Bachelor of Science in Computer Science and Data Science GPA: 3.71
+• Coursework: Object-Oriented Programming, Data Structures & Algorithms, Probability, Data Engineering,
+Computer Architecture, Analysis of Algorithms, Artificial Intelligence, Statistical Theory, Intro to Data Science
+• Future Coursework (Spring 2025): Systems Programming, Software Engineering, Data Mining And Machine
+Learning, Statistical Programming And Data Management
+Experience
+Undergraduate Researcher Aug 2024 – Present
+Purdue University - West Lafayette West Lafayette, IN
+• Processing large IMPROVE datasets in Python from 8 Midwest states, analyzing wildfire impacts over 20+ years
+• Writing scripts with pandas for data extraction, cleaning, and in-depth statistical analysis of aerosol compositions
+• Automating visualization with Matplotlib, highlighting long-term air quality trends and regional differences
+Undergraduate Research Assistant Aug 2024 – Present
+Purdue Vertically Integrated Projects (VIP) West Lafayette, IN
+• Training HRNet/RTMPose models (via OpenMMLab) on AP-10k, and testing models with our Senegal dataset
+• Employing transfer learning and training the CNNs on our dataset, and evaluating keypoint detection accuracy
+• Labeling keypoints and images to create accurate dataset, and optimizing the models in Python using PyTorch
+Software Development Intern Jul 2024 – Aug 2024
+SiTime Santa Clara, CA
+• Developed a PyQt6 software tool for wafer production data analysis, significantly optimizing testing processes
+• Achieved a 70 - 90% reduction in test time, resulting in faster production cycles and cost savings for Test Engineers
+• Created a data processing algorithm using pandas in Python, facilitating efficient analysis of large STDF files
+• Generated custom insightful visualizations using Matplotlib, transforming complex data into actionable insights
+Software Engineeer Intern Jul 2021 – Aug 2021
+SonicWall San Jose, CA
+• Implemented JSON/HTML code to streamline data transfer processes for a network security manager
+• Conducted 250+ API tests using Postman to ensure system integrity and a better user experience
+• Engaged with the Software Engineering Team Lead to optimize data transfer and enhance customer reporting
+Projects
+Marketplace Messaging App | Java, Thread, Server Sockets, JavaGUI Apr 2023 – May 2023
+• Developed Java GUI server for ”Customers”/”Sellers” users to communicate using Swing library
+• Implemented Multi threading and Server Sockets enabling concurrent client access utilizing a centralized server
+• Effectively increased efficiency of program via using appropriate data structures and algorithms, and File I/O
+Uberz | HTML, CSS, JavaScript Jun 2021 – Aug 2021
+• Developed a visually appealing website with HTML, CSS and basic Js, inspired by previous Uber sites
+• Successfully Implemented a clean user interface with dynamic resizing, through HTML/CSS & Js
+Certifications & Awards
+Certifications: Machine Learning Specialization, Python for Data Science, AI & Development, Advanced Learning
+Algorithms, Supervised Machine Learning: Regression & Classification, Unsupervised Learning, Recommenders,
+Reinforcement Learning, SAP Technology Training, Gen AI Technology Training, Data Analytics Technology Training
+Awards: OUR Scholars Scholarship, Dean’s List, Semester Honors, 1st in Central Coast Section Scholastic Award (Boys
+Golf - 2022)
+Technical Skills
+Languages: Java, Python, C/C++, R, HTML/CSS, JavaScript, SQL
+Developer Tools: Linux, Git, GitHub, VS Code, PyCharm, IntelliJ, R Studio, Brackets, Sublime
+Libraries: numPy, Matplotlib, pandas, scikit-learn, Java Swing, R ggplot, Tensorflow
+Productivity Software: Outlook, Word, Excel, PowerPoint

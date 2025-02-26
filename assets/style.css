@@ -1,0 +1,222 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color: #00ff9d;
+    --secondary-color: #2d2d2d;
+    --hover-color: #00cc7d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+.resume-button {
+    background-color: var(--accent-color);
+    color: var(--bg-color) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-button:hover {
+    background-color: var(--hover-color);
+    color: var(--bg-color) !important;
+}
+
+.typing-text {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.typed-cursor {
+    font-size: 1.5rem;
+}
+
+.education-card, .experience-card, .project-card {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+.education-card:hover, .experience-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .typing-text {
+        font-size: 1.2rem;
+    }
+}
