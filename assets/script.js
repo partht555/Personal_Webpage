@@ -1,60 +1,51 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    // ── Matrix rain background ───────────────────────────
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    const chars = '01アイウエオカキクケコABCDEFGHIJKLMNOPQRSTUVWXYZ<>{}[]()#@$%^&*;:'.split('');
+    let cols, drops;
+
+    function initCanvas() {
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        cols  = Math.floor(canvas.width / 18);
+        drops = Array(cols).fill(1);
+    }
+
+    function drawMatrix() {
+        ctx.fillStyle = 'rgba(6, 6, 16, 0.1)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.font = '13px Fira Code, monospace';
+        drops.forEach((y, i) => {
+            const char = chars[Math.floor(Math.random() * chars.length)];
+            const gradient = ctx.createLinearGradient(0, (y - 1) * 18, 0, y * 18);
+            gradient.addColorStop(0, 'rgba(0, 245, 255, 0.9)');
+            gradient.addColorStop(1, 'rgba(157, 78, 221, 0.4)');
+            ctx.fillStyle = gradient;
+            ctx.fillText(char, i * 18, y * 18);
+            if (y * 18 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+            drops[i]++;
+        });
+    }
+
+    initCanvas();
+    setInterval(drawMatrix, 60);
+    window.addEventListener('resize', initCanvas);
+
+    // ── Typed.js ─────────────────────────────────────────
     new Typed('#typing', {
         strings: [
-            'Computer Science Student',
-            'Software Developer',
-            'Data Science Enthusiast',
-            'Problem Solver'
+            'MTS @ Nutanix',
+            'MCS @ UIUC',
+            'Software Engineer',
+            'Data Science & ML Enthusiast'
         ],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
         showCursor: false
     });
-
-    // Contact form handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-
-            const submitButton = this.querySelector('button[type="submit"]');
-            submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
-
-            // Get form data
-            const formData = {
-                name: this.querySelector('input[type="text"]').value,
-                email: this.querySelector('input[type="email"]').value,
-                message: this.querySelector('textarea').value
-            };
-
-            try {
-                const response = await fetch('/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                const result = await response.json();
-
-                if (response.ok) {
-                    alert('Thank you for your message! I will get back to you soon.');
-                    this.reset();
-                } else {
-                    throw new Error(result.error || 'Failed to send message');
-                }
-            } catch (error) {
-                alert('Sorry, there was an error sending your message. Please try again later.');
-                console.error('Error:', error);
-            } finally {
-                submitButton.disabled = false;
-                submitButton.textContent = 'Send Message';
-            }
-        });
-    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {
