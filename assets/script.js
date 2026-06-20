@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'MTS @ Nutanix',
             'MCS @ UIUC',
             'Software Engineer',
-            'Data Science & ML Enthusiast'
+            'Data Science Enthusiast',
+            'ML Engineer'
         ],
         typeSpeed: 50,
         backSpeed: 50,
