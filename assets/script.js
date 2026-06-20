@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function drawMatrix() {
-        ctx.fillStyle = 'rgba(6, 6, 16, 0.1)';
+        ctx.fillStyle = 'rgba(6, 6, 16, 0.08)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctx.font = '13px Fira Code, monospace';
         drops.forEach((y, i) => {
             const char = chars[Math.floor(Math.random() * chars.length)];
             const gradient = ctx.createLinearGradient(0, (y - 1) * 18, 0, y * 18);
-            gradient.addColorStop(0, 'rgba(0, 245, 255, 0.9)');
-            gradient.addColorStop(1, 'rgba(157, 78, 221, 0.4)');
+            gradient.addColorStop(0, 'rgba(0, 245, 255, 1.0)');
+            gradient.addColorStop(1, 'rgba(157, 78, 221, 0.55)');
             ctx.fillStyle = gradient;
             ctx.fillText(char, i * 18, y * 18);
             if (y * 18 > canvas.height && Math.random() > 0.975) drops[i] = 0;
@@ -39,8 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'MTS @ Nutanix',
             'MCS @ UIUC',
             'Software Engineer',
-            'Data Science Enthusiast',
-            'ML Engineer'
+            'ML/AI Enthusiast'
         ],
         typeSpeed: 50,
         backSpeed: 50,
