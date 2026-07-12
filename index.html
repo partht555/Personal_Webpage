@@ -32,7 +32,7 @@
                 <a href="https://github.com/partht555" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:partht555@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="tel:6692336169"><i class="fas fa-phone"></i></a>
-                <a href="download-resume/Parth_Thakre_Resume_MTS.pdf" download class="resume-button"><i class="fas fa-file-download"></i> Download Resume</a>
+                <a href="download-resume/Parth_Thakre_Resume.pdf" download class="resume-button"><i class="fas fa-file-download"></i> Download Resume</a>
             </div>
     </section>
 
@@ -74,7 +74,11 @@
                 <div class="timeline-content">
                     <div class="tl-header"><h3>Member of Technical Staff</h3><span class="tl-date">Apr 2026 – Present</span></div>
                     <p class="tl-company"><img src="assets/logos/nutanix.jpg" alt="" class="company-logo" onerror="this.style.display='none'"> Nutanix &nbsp;·&nbsp; San Jose, CA</p>
-                    <ul><li>Working on Cloud Infrastructure, API Performance &amp; Observability on the Prism Infra team</li></ul>
+                    <ul>
+                        <li>Built a Go CLI to export/import Prism Central configuration across clusters via internal V4 REST APIs, with a generic HTTP client, structured logging, and pluggable file I/O (CSV/JSON/JSONL/YAML)</li>
+                        <li>Designed a dependency-aware entity ordering layer that topologically sorts entities to resolve import/export order and drive rate-limit-aware concurrent ingestion</li>
+                        <li>Automated performance-baseline reporting for Janus release with AI-assisted Python converting Jenkins/Confluence data to YAML; built Bash CI/CD with load balancing for v4 API perf tests</li>
+                    </ul>
                 </div>
             </div>
 
@@ -134,9 +138,8 @@
                     <div class="tl-header"><h3>Software Development Intern</h3><span class="tl-date">Jul 2024 – Aug 2024</span></div>
                     <p class="tl-company"><img src="assets/logos/sitime.png" alt="" class="company-logo" onerror="this.style.display='none'"> SiTime</p>
                     <ul>
-                        <li>Developed PyQt6 software tool for wafer production data analysis</li>
-                        <li>Achieved 70–90% reduction in test time</li>
-                        <li>Created data processing algorithm using pandas</li>
+                        <li>Reduced wafer test analysis from 2.5+ hours to 3–8 minutes via Rust-backed STDF parsing with optimized pandas transformations, accelerating failure detection by 90%</li>
+                        <li>Engineered PyQt6 dashboard with vectorized operations processing multi-GB files across 3M+ records, enabling real-time manufacturing anomaly identification</li>
                     </ul>
                 </div>
             </div>
@@ -173,6 +176,29 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="terminal-grid">
+
+            <div class="terminal-card">
+                <div class="terminal-bar">
+                    <div class="terminal-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                    <span class="terminal-title">~/projects/data-scout</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="tech-stack"><span class="term-prompt">$</span> stack: Python &middot; AWS Lambda &middot; API Gateway &middot; DynamoDB &middot; OpenSearch &middot; Bedrock &middot; JavaScript</p>
+                    <p>Serverless dataset discovery assistant for natural-language search across 30,000+ indexed records. Uses Bedrock/Claude for filter extraction with fallback keyword search, powered by DynamoDB Streams and OpenSearch indexing.</p>
+                    <button onclick="window.location.href='https://github.com/partht555/data_curation_implementation'">$ ./view_project</button>
+                </div>
+            </div>
+
+            <div class="terminal-card">
+                <div class="terminal-bar">
+                    <div class="terminal-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div>
+                    <span class="terminal-title">~/projects/ai-risk-assessment</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="tech-stack"><span class="term-prompt">$</span> stack: React &middot; Next.js &middot; FastAPI &middot; Python &middot; SQLAlchemy &middot; LLM</p>
+                    <p>3-stage LLM security pipeline with FastAPI asyncio across 10+ endpoints. Async system retrieves prompts, sends to LLM, and auto-grades responses. Full-stack Next.js + Tailwind CSS frontend with FastAPI + SQLAlchemy backend.</p>
+                </div>
+            </div>
 
             <div class="terminal-card">
                 <div class="terminal-bar">
@@ -230,19 +256,25 @@
             <div class="skill-line">
                 <span class="skill-key">languages</span>
                 <div class="skill-tags">
-                    <span class="skill-tag">Java</span><span class="skill-tag">Python</span><span class="skill-tag">C/C++</span><span class="skill-tag">R</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">SQL</span><span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C++</span><span class="skill-tag">R</span><span class="skill-tag">SQL</span><span class="skill-tag">JavaScript</span><span class="skill-tag">SAS</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Bash</span>
                 </div>
             </div>
             <div class="skill-line">
-                <span class="skill-key">frameworks</span>
+                <span class="skill-key">ml / ai</span>
                 <div class="skill-tags">
-                    <span class="skill-tag">React</span><span class="skill-tag">Node.js</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Redux</span><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">TensorFlow</span><span class="skill-tag">XGBoost</span><span class="skill-tag">HuggingFace</span><span class="skill-tag">Sequelize</span>
+                    <span class="skill-tag">TensorFlow</span><span class="skill-tag">PyTorch</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">XGBoost</span><span class="skill-tag">HuggingFace</span><span class="skill-tag">VADER</span><span class="skill-tag">RTMPose</span>
+                </div>
+            </div>
+            <div class="skill-line">
+                <span class="skill-key">data</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Matplotlib</span><span class="skill-tag">Seaborn</span><span class="skill-tag">ggplot2</span><span class="skill-tag">Tableau</span><span class="skill-tag">PyQt6</span>
                 </div>
             </div>
             <div class="skill-line">
                 <span class="skill-key">tools</span>
                 <div class="skill-tags">
-                    <span class="skill-tag">Git</span><span class="skill-tag">Linux</span><span class="skill-tag">AWS S3</span><span class="skill-tag">LDAP</span><span class="skill-tag">Postman</span><span class="skill-tag">VS Code</span><span class="skill-tag">IntelliJ</span><span class="skill-tag">Label Studio</span>
+                    <span class="skill-tag">FastAPI</span><span class="skill-tag">REST APIs</span><span class="skill-tag">AWS</span><span class="skill-tag">Docker</span><span class="skill-tag">Git</span><span class="skill-tag">Linux</span><span class="skill-tag">SSMS</span><span class="skill-tag">LabelStudio</span><span class="skill-tag">SAP</span>
                 </div>
             </div>
         </div>
